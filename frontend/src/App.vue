@@ -1,16 +1,14 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router';
-</script>
-
 <template>
-    <header>
-        <div class="wrapper">
-            <nav>
-                <RouterLink to="/">Home</RouterLink>
-            </nav>
-        </div>
-    </header>
-    <RouterView />
+    <div class="max-w-md mx-auto">
+        <h1 class="my-8 text-4xl text-center text-gray-600">
+            Fullstack Challenge
+        </h1>
+        <main>
+            <RouterView />
+        </main>
+    </div>
 </template>
 
-<style scoped></style>
+<script setup lang="ts">
+import { RouterView } from 'vue-router';
+</script>
