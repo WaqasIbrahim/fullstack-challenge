@@ -6,6 +6,9 @@ RUN apt-get install -y \
     pkg-config  \
     libzip-dev
 
+RUN pecl install -o -f redis \
+&&  docker-php-ext-enable redis
+
 RUN docker-php-ext-install \
     mysqli \
     pdo_mysql \
