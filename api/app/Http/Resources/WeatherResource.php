@@ -28,7 +28,7 @@ class WeatherResource extends JsonResource
                 'min' => $this->temperature_min,
                 'max' => $this->temperature_max,
             ],
-            'updatedAt' => $this->updated_at,
+            'updatedAt' => $this->updated_at->diffForHumans(),
         ];
     }
 }
